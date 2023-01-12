@@ -28,9 +28,9 @@ jobs:
             build-mono: true
             artifact: true
 
-          - name: Editor and sanitizers (target=debug, tools=yes, use_asan=yes, use_ubsan=yes, linker=gold)
+          - name: Editor and sanitizers (target=release_debug, tools=yes, use_asan=yes, use_ubsan=yes, linker=gold)
             cache-name: linux-editor-sanitizers
-            target: debug
+            target: release_debug
             tools: true
             sconsflags: use_asan=yes use_ubsan=yes linker=gold
             test: true
