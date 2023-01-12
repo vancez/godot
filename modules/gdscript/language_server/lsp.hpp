@@ -1004,7 +1004,11 @@ struct CompletionItem {
 		dict["label"] = label;
 		dict["kind"] = kind;
 		dict["data"] = data;
-		dict["insertText"] = insertText;
+		if insertText.empty() {
+			dict["insertText"] = label;
+		} else {
+			dict["insertText"] = insertText;
+		}
 		if (resolved) {
 			dict["detail"] = detail;
 			dict["documentation"] = documentation.to_json();
