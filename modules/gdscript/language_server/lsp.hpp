@@ -1004,7 +1004,7 @@ struct CompletionItem {
 		dict["label"] = label;
 		dict["kind"] = kind;
 		dict["data"] = data;
-		if insertText.empty() {
+		if (insertText.empty()) {
 			dict["insertText"] = label;
 		} else {
 			dict["insertText"] = insertText;
