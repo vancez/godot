@@ -1,5 +1,5 @@
 name: 🌐 JavaScript Builds
-on: []
+on: [workflow_dispatch]
 
 # Global Settings
 env:

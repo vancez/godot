@@ -1,5 +1,5 @@
 name: ☁ Server Builds
-on: []
+on: [workflow_dispatch]
 
 # Global Settings
 env:
